@@ -1,0 +1,88 @@
+/**** **** **** **** ****
+IMPORTS
+**** **** **** **** ****/
+
+@import "susy";
+
+/**** **** **** **** ****
+INCLUDES
+**** **** **** **** ****/
+
+@include border-box-sizing;
+
+// potentially a useful snippet  @include gallery(1 of 10);
+img {
+  max-width: 100%;
+  height: auto;
+}
+.boom {
+  margin-left: span(1.2);
+  line-height: 1.5;
+  @include clearfix;
+  @include breakpoint(medium) {
+    text-align: center;
+  }
+}
+.played {
+  @include span(6);
+  font-size: 1.1em;
+  padding-left: 1%;
+  margin-right: 6%;
+    @include breakpoint(small) {
+      @include span(11 of 12);
+      margin-left:0;
+    }
+    @include breakpoint(medium) {
+      @include span(11 of 12);
+
+  }
+}
+.circles {
+  @include breakpoint(medium) {
+    margin-left: gutter(1) + span(.4);
+  }
+}
+.chain {
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 10%;
+}
+.greenCircle {
+  background-color: $green;
+}
+.two::before{
+  position: absolute;
+  left: 10px;
+}
+.blueCircle {
+  background-color: rgba(145, 185, 176, 0.9);
+  margin-left: -80px;
+}
+
+// .circles {
+//   margin-left: gutter(3);
+//   margin-top: 5%;
+//   @include breakpoint(large) {
+//       max-width: 90%;
+//       height: auto;
+//       margin-top: 10%;
+//   }
+//   @include breakpoint(small) {
+//       margin-left: 4%;
+//   }
+//   @include breakpoint(medium) {
+//       margin-left: 0;
+//   }
+// }
+

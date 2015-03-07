@@ -1,0 +1,184 @@
+/* ==========================================================================
+  Mixins
+========================================================================== */
+/**** **** **** **** ****
+ANIMATION -
+USAGE: @include animation(name, fadeIn);
+USAGE: @include animation(duration, .15s);
+USAGE: @include animation(delay, 1s);
+USAGE: @include animation(fill-mode, both);
+**** **** **** **** ****/
+/**** **** **** **** ****
+BREAKPOINTS -
+USAGE: @include breakpoint(small) {}
+**** **** **** **** ****/
+/**** **** **** **** ****
+CLEARFIX -
+USAGE: @include clearfix();
+**** **** **** **** ****/
+/**** **** **** **** ****
+PLACEHOLDER -
+USAGE: @include placeholder(#333);
+**** **** **** **** ****/
+/**** **** **** **** ****
+FLEXBOX!
+USAGE: @include flexbox();
+**** **** **** **** ****/
+/**** **** **** **** ****
+FLEX
+USAGE: @include flex(1 1 200px);
+**** **** **** **** ****/
+/**** **** **** **** ****
+ORDER
+USAGE: @include order(2);
+**** **** **** **** ****/
+/**** **** **** **** ****
+Centering Mixin
+**** **** **** **** ****/
+/**** **** **** ***** *****
+Vertical Align Center Mixin
+**** ***** ***** ***** *****/
+/* ==========================================================================
+  Variables
+========================================================================== */
+/**** **** **** **** ****
+IMPORTS
+**** **** **** **** ****/
+/**** **** **** **** ****
+INCLUDES
+**** **** **** **** ****/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.boom {
+  margin-left: 8.47458%;
+  line-height: 1.5; }
+  .boom:before, .boom:after {
+    content: " ";
+    display: table; }
+  .boom:after {
+    clear: both; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .boom {
+      text-align: center; } }
+
+.played {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  font-size: 1.1em;
+  padding-left: 1%;
+  margin-right: 6%; }
+  @media (max-width: 767px) {
+    .played {
+      width: 91.52542%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-left: 0; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .played {
+      width: 91.52542%;
+      float: left;
+      margin-right: 1.69492%; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .circles {
+    margin-left: 26.69492%; } }
+
+.chain {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1em;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 10%; }
+
+.greenCircle {
+  background-color: #6B7701; }
+
+.two::before {
+  position: absolute;
+  left: 10px; }
+
+.blueCircle {
+  background-color: rgba(145, 185, 176, 0.9);
+  margin-left: -80px; }
+
+textarea {
+  border: 5px solid tomato;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 5%;
+  margin-top: 10%; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: white; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans Condensed", sans-serif; }
+
+button {
+  width: 40%;
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+
+.stripey {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%; }
+
+.youPlus {
+  font-family: "Oranienbaum", serif;
+  color: #333333;
+  font-size: 3em;
+  letter-spacing: .1em; }
+
+.secret {
+  font-size: .5em;
+  vertical-align: middle; }
+
+.line {
+  width: 90%;
+  color: black;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  border: 1px solid black; }
+
+/*# sourceMappingURL=styles.css.map */

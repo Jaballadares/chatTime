@@ -1,0 +1,6 @@
+textarea {
+  border: 5px solid tomato;
+  @include span(4 of 12);
+  margin-left: 5%;
+  margin-top: 10%;
+}
