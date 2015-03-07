@@ -34,12 +34,14 @@ img {
     }
     @include breakpoint(medium) {
       @include span(11 of 12);
-
+      margin-bottom: 0;
   }
 }
 .circles {
   @include breakpoint(medium) {
     margin-left: gutter(1) + span(.4);
+
+
   }
 }
 .chain {
@@ -57,6 +59,9 @@ img {
     font-family: sans-serif;
     position: relative;
     margin-top: 10%;
+    @include breakpoint(medium) {
+      margin-top: 4%;
+    }
 }
 .greenCircle {
   background-color: $green;

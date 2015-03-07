@@ -1,0 +1,30 @@
+.chatContainer {
+  @include breakpoint(medium) {
+    width: 80%;
+    display: flex;
+    margin-left: span(2.4);
+    padding-top: 4%;
+  }
+}
+
+textarea {
+  border: 5px solid tomato;
+  border-radius: 10px;
+  height: 20em;
+  width: 70%;
+}
+
+.buttonTime {
+  background: $blue;
+  color: white;
+  padding: 1.6%;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  right: 6%;
+  &:hover {
+    background: darken($blue, 15%);
+    cursor: pointer;
+  }
+}

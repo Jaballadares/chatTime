@@ -85,7 +85,8 @@ img {
     .played {
       width: 91.52542%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-bottom: 0; } }
 
 @media (min-width: 768px) and (max-width: 979px) {
   .circles {
@@ -106,6 +107,9 @@ img {
   font-family: sans-serif;
   position: relative;
   margin-top: 10%; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .chain {
+      margin-top: 4%; } }
 
 .greenCircle {
   background-color: #6B7701; }
@@ -118,14 +122,6 @@ img {
   background-color: rgba(145, 185, 176, 0.9);
   margin-left: -80px; }
 
-textarea {
-  border: 5px solid tomato;
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-  margin-left: 5%;
-  margin-top: 10%; }
-
 * {
   box-sizing: border-box; }
 
@@ -137,12 +133,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-size: 8.47458%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top; }
+  margin-right: auto; }
   body:after {
     content: " ";
     display: block;
@@ -150,12 +141,6 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "Open Sans Condensed", sans-serif; }
-
-button {
-  width: 40%;
-  display: block;
-  text-align: center;
-  margin: 0 auto; }
 
 .stripey {
   text-align: center;
@@ -180,5 +165,31 @@ button {
   margin-right: auto;
   margin-bottom: 0;
   border: 1px solid black; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .chatContainer {
+    width: 80%;
+    display: flex;
+    margin-left: 18.64407%;
+    padding-top: 4%; } }
+
+textarea {
+  border: 5px solid tomato;
+  border-radius: 10px;
+  height: 20em;
+  width: 70%; }
+
+.buttonTime {
+  background: #91B9B0;
+  color: white;
+  padding: 1.6%;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  right: 6%; }
+  .buttonTime:hover {
+    background: #639b8e;
+    cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

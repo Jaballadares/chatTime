@@ -13,7 +13,7 @@ gulp.task('webserver', function() {
 gulp.task('watch', function() {
     gulp.watch('./public/css/*.css', ['css']);
     gulp.watch('./public/*.html', ['html']);
-    gulp.watch('.public//js/*.js', ['js']);
+    gulp.watch('./public/js/*.js', ['js']);
 });
 
 gulp.task('html', function() {
