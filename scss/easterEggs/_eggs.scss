@@ -42,4 +42,15 @@ textarea {
     background: darken($blue, 15%);
     cursor: pointer;
   }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    background: red;
+    -webkit-transition: background-color 10 ease;
+    -moz-transition: background-color 10 ease;
+    -o-transition: background-color 10 ease;
+    transition: background-color 10 ease;
+  }
 }
+
