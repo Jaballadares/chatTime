@@ -40,7 +40,7 @@ img {
 .circles {
     @include breakpoint(small) {
     margin-left: gutter(3.8);
-  }
+}
   @include breakpoint(medium) {
     margin-left: gutter(1) + span(.4);
   }
@@ -59,7 +59,7 @@ img {
     font-weight: bold;
     font-family: sans-serif;
     position: relative;
-    margin-top: 10%;
+    margin-top: 5%;
     @include breakpoint(small) {
       width: 150px;
       height: 150px;

@@ -90,7 +90,8 @@ img {
 
 @media (max-width: 767px) {
   .circles {
-    margin-left: 5.55556%; } }
+    margin-left: 5.55556%;
+    padding-top: 0; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .circles {
     margin-left: 26.69492%; } }
@@ -109,7 +110,7 @@ img {
   font-weight: bold;
   font-family: sans-serif;
   position: relative;
-  margin-top: 5%; }
+  margin-top: 10%; }
   @media (max-width: 767px) {
     .chain {
       width: 150px;
