@@ -176,8 +176,13 @@ h1, h2, h3, h4, h5 {
 textarea {
   border: 5px solid tomato;
   border-radius: 10px;
-  height: 20em;
-  width: 70%; }
+  height: 10em;
+  width: 65%; }
+
+::-webkit-input-placeholder {
+  color: #598C42;
+  font-size: 1.7em;
+  font-family: "Open Sans Condensed", sans-serif; }
 
 .buttonTime {
   background: #91B9B0;

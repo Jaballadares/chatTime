@@ -10,10 +10,15 @@
 textarea {
   border: 5px solid tomato;
   border-radius: 10px;
-  height: 20em;
-  width: 70%;
+  height: 10em;
+  width: 65%;
 }
 
+::-webkit-input-placeholder {
+  color: $hover-color;
+  font-size: 1.7em;
+  font-family: $header-font;
+}
 .buttonTime {
   background: $blue;
   color: white;
