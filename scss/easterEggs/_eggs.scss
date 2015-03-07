@@ -1,9 +1,14 @@
 .chatContainer {
+  display: flex;
   @include breakpoint(medium) {
     width: 80%;
     display: flex;
     margin-left: span(2.4);
     padding-top: 4%;
+  }
+  @include breakpoint(small) {
+    width: 90%;
+    margin-left: span(.5);
   }
 }
 
@@ -12,6 +17,9 @@ textarea {
   border-radius: 10px;
   height: 10em;
   width: 65%;
+  @include breakpoint(small) {
+    width: 80%;
+  }
 }
 
 ::-webkit-input-placeholder {

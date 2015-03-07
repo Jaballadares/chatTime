@@ -88,6 +88,9 @@ img {
       margin-right: 1.69492%;
       margin-bottom: 0; } }
 
+@media (max-width: 767px) {
+  .circles {
+    margin-left: 5.55556%; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .circles {
     margin-left: 26.69492%; } }
@@ -107,6 +110,10 @@ img {
   font-family: sans-serif;
   position: relative;
   margin-top: 10%; }
+  @media (max-width: 767px) {
+    .chain {
+      width: 150px;
+      height: 150px; } }
   @media (min-width: 768px) and (max-width: 979px) {
     .chain {
       margin-top: 4%; } }
@@ -166,18 +173,27 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0;
   border: 1px solid black; }
 
-@media (min-width: 768px) and (max-width: 979px) {
-  .chatContainer {
-    width: 80%;
-    display: flex;
-    margin-left: 18.64407%;
-    padding-top: 4%; } }
+.chatContainer {
+  display: flex; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .chatContainer {
+      width: 80%;
+      display: flex;
+      margin-left: 18.64407%;
+      padding-top: 4%; } }
+  @media (max-width: 767px) {
+    .chatContainer {
+      width: 90%;
+      margin-left: 2.54237%; } }
 
 textarea {
   border: 5px solid tomato;
   border-radius: 10px;
   height: 10em;
   width: 65%; }
+  @media (max-width: 767px) {
+    textarea {
+      width: 80%; } }
 
 ::-webkit-input-placeholder {
   color: #598C42;

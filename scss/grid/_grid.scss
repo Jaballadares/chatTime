@@ -38,10 +38,11 @@ img {
   }
 }
 .circles {
+    @include breakpoint(small) {
+    margin-left: gutter(3.8);
+  }
   @include breakpoint(medium) {
     margin-left: gutter(1) + span(.4);
-
-
   }
 }
 .chain {
@@ -59,6 +60,10 @@ img {
     font-family: sans-serif;
     position: relative;
     margin-top: 10%;
+    @include breakpoint(small) {
+      width: 150px;
+      height: 150px;
+  }
     @include breakpoint(medium) {
       margin-top: 4%;
     }
