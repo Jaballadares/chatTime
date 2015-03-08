@@ -19,6 +19,10 @@ textarea {
   border-radius: 10px;
   height: 10em;
   width: 65%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
   @include breakpoint(small) {
     width: 80%;
   }
@@ -29,6 +33,12 @@ textarea {
   font-size: 1.7em;
   font-family: $header-font;
 }
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.2s 0.2s ease;
+  opacity: 0;
+}
+
 .buttonTime {
   background: $blue;
   color: white;

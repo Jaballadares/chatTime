@@ -39,7 +39,7 @@ img {
 }
 .circles {
     @include breakpoint(small) {
-    margin-left: gutter(3.8);
+    margin-left: gutter(1.5);
 }
   @include breakpoint(medium) {
     margin-left: gutter(1) + span(.4);

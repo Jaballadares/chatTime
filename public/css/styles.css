@@ -90,7 +90,7 @@ img {
 
 @media (max-width: 767px) {
   .circles {
-    margin-left: 5.55556%; } }
+    margin-left: 15.38462%; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .circles {
     margin-left: 26.69492%; } }
@@ -193,7 +193,11 @@ textarea {
   border: 5px solid #55857a;
   border-radius: 10px;
   height: 10em;
-  width: 65%; }
+  width: 65%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none; }
   @media (max-width: 767px) {
     textarea {
       width: 80%; } }
@@ -202,6 +206,10 @@ textarea {
   color: #598C42;
   font-size: 1.7em;
   font-family: "Open Sans Condensed", sans-serif; }
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.2s 0.2s ease;
+  opacity: 0; }
 
 .buttonTime {
   background: #91B9B0;

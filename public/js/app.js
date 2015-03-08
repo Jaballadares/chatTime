@@ -7,3 +7,4 @@ $('.circles').on('click', function() {
     $(this).after("hooray");
   });
 });
+
