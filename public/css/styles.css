@@ -38,9 +38,9 @@ Centering Mixin
 /**** **** **** ***** *****
 Vertical Align Center Mixin
 **** ***** ***** ***** *****/
-/* ==========================================================================
-  Variables
-========================================================================== */
+/* === ====== ======= ======== ========== ==========
+      VARIABLES
+====== ====== ======= ======== ======== ====== ======= */
 /**** **** **** **** ****
 IMPORTS
 **** **** **** **** ****/
@@ -204,8 +204,13 @@ textarea {
 
 ::-webkit-input-placeholder {
   color: #598C42;
-  font-size: 1.7em;
+  font-weight: 700;
+  text-align: center;
   font-family: "Open Sans Condensed", sans-serif; }
+  @media (max-width: 767px) {
+    ::-webkit-input-placeholder {
+      padding-top: 10%;
+      font-size: 1.4em; } }
 
 [placeholder]:focus::-webkit-input-placeholder {
   transition: opacity 0.2s 0.2s ease;
